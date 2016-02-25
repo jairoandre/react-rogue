@@ -12,7 +12,7 @@ process.env.BABEL_ENV = ENV
 
 const common = {
   devtool: 'eval-source-map',
-  entry: PATHS.app,
+  entry: ['babel-polyfill', PATHS.app],
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
